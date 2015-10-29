@@ -107,7 +107,7 @@ window.twttr = (function(d, s, id) {
 	<ul style="width:100%;">
 	<li><a href="events.html"  class="nav_btn">Events</a></li>
 	<li><a href="contact.html"  class="nav_btn">Contact</a></li>
-	<li><a href="https://www.paypal.com/uk/cgi-bin/webscr?cmd=_flow&SESSION=tsHzcu1LUVwAY2-UGk-ar62Ldkv6duI5nKO8dujSfHS0a33zqrhxxFcxyc8&dispatch=5885d80a13c0db1f8e263663d3faee8d64ad11bbf4d2a5a1a0d303a50933f9b2"  class="nav_btn">Donate</a></li>
+	<li><a href="donate.html"  class="nav_btn">Donate</a></li>
 	</ul>
 	</div>
 	
