@@ -112,8 +112,12 @@ window.twttr = (function(d, s, id) {
 	</div>
 	
 	<div class="fb-share-button" data-href="https://apps.facebook.com/macmillancompanion" data-layout="button"></div>
+	
 	<a href="https://twitter.com/share" class="twitter-share-button" data-url="https://apps.facebook.com/macmillancompanion/" data-text="Check out the Macmillan Companion Facebook app!" data-via="macmillancancer" data-size="large">Tweet</a>
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	
+	<script src="https://apis.google.com/js/platform.js"></script>
+	<div class="g-ytsubscribe" data-channel="MacmillanCancer" data-layout="full" data-count="default"></div>
 	
 </div>
 <div style="float:right" class="content_right">
