@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
 
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
+  <title>Macmillan Companion</title>
+  <meta name="Macmillan Companion Facebook App" content="Macmillan Companion Facebook App">
   <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href="styles.css">
