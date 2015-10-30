@@ -94,7 +94,7 @@ window.twttr = (function(d, s, id) {
 <div id="toolbarright">
 	<strong id="name">Name here</strong>
 	<img src="img/settings.png" id="settings"/>
-	<img id="profile" src=""/>
+	<img id="profile"/>
 </div>
 
 </div>
