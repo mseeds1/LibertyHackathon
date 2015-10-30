@@ -14,6 +14,10 @@ window.fbAsyncInit = function() {
 			  var welcomeBlock = document.getElementById('fb-welcome');
 			  welcomeBlock.innerHTML = 'Hello, ' + data.first_name + '!';
 			});
+			
+			FB.api('/me/picture?type=normal', function (response) {
+          document.getElementById("profile").setAttribute("src", response.data.url);
+        });
 		  }
 		}
 
@@ -34,6 +38,7 @@ window.fbAsyncInit = function() {
   (function(d, s, id){
      var js, fjs = d.getElementsByTagName(s)[0];
      if (d.getElementById(id)) {return;}
+	 
      js = d.createElement(s); js.id = id;
      js.src = "//connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
