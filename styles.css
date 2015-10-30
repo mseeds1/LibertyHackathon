@@ -16,6 +16,11 @@ strong {
 	font-family: 'PT Sans', sans-serif;
 }
 
+ul {
+	list-style:none;
+	margin-bottom:4em;
+}
+
 #navbar {
 	height: 9em;
 	background-color: #00ad4d;
@@ -58,4 +63,48 @@ float:left;
 	width:80%;
 	margin-left:auto;
 	margin-right:auto;
+}
+
+.content_left {
+	width:33%;
+	display:inline;
+}
+
+.btn_list {
+	width:20%;
+	display:inline-block;
+	margin-left:0;
+	padding-left:0;
+}
+
+.nav_btn {
+	background-color:#44c767;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:15px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	display:block;
+	margin:1em;
+	width:9em;
+	margin-right:5em;
+}
+.nav_btn:hover {
+	background-color:#5cbf2a;
+}
+.nav_btn:active {
+	position:relative;
+	top:1px;
+}
+
+#twitter-widget-0{
+	width : 100% !important;
+	margin-top:2em !important;
 }

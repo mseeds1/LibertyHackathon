@@ -53,7 +53,7 @@ window.twttr = (function(d, s, id) {
 			FB.api("...?fields={fieldname_of_type_ProfilePictureSource}",
 			function (response) {
 				if (response && !response.error) {
-					console.log(response.fieldname_of_type_ProfilePictureSource);
+					console.log("img/"+ response.fieldname_of_type_ProfilePictureSource);
 				}
 			});
 		  }
@@ -99,13 +99,25 @@ window.twttr = (function(d, s, id) {
 
 </div>
 <div id="content">
-
-<h1 id="fb-welcome">eat shit</h1>
-
+<div class="content_left">
+	<ul class="btn_list">
+		<li><button href="updates.html" class="nav_btn">Updates</button></li>
+		<li><button href="profile.html"  class="nav_btn">Profile</button></li>
+		<li><button href="support.html"  class="nav_btn">Support</button></li>
+	</ul>
+	<div class="btn_list">
+	<ul>
+	<li><button href="events.html"  class="nav_btn">Events</button></li>
+	<li><button href="contact.html"  class="nav_btn">Contact</button></li>
+	<li><button href="donate.html"  class="nav_btn">Donate</button></li>
+	</ul>
+	</div>
 </div>
-
-<a class="twitter-timeline" href="https://twitter.com/macmillancancer" data-widget-id="659481360818675716">Tweets by @macmillancancer</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<div style="float:right">
+	<a class="twitter-timeline" style="width:200px;" href="https://twitter.com/macmillancancer" data-widget-id="659481360818675716">Tweets by @macmillancancer</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+</div>
 
 </body>
 </html>
