@@ -98,9 +98,9 @@ window.twttr = (function(d, s, id) {
 <div id="content">
 <div class="content_left">
 	<ul class="btn_list">
-		<li><a href="gallery.html" class="nav_btn">Gallery</a></li>
+		<li><a href="updates.html" class="nav_btn">Updates</a></li>
 		<li><a href="profile.html"  class="nav_btn">Profile</a></li>
-		<li><a href="support.html"  class="nav_btn">Support</a></li>
+		<li><a href="support.html"  class="nav_btn">Gallery</a></li>
 		</ul>
 		
 	<div class="btn_list">
