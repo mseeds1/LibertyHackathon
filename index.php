@@ -106,7 +106,7 @@ window.twttr = (function(d, s, id) {
 		<li><a href="support.html"  class="nav_btn">Support</a></li>
 	</ul>
 	<div class="btn_list">
-	<ul>
+	<ul style=width:100%;">
 	<li><a href="events.html"  class="nav_btn">Events</a></li>
 	<li><a href="contact.html"  class="nav_btn">Contact</a></li>
 	<li><a href="donate.html"  class="nav_btn">Donate</a></li>

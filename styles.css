@@ -60,13 +60,13 @@ float:left;
 	padding-left:3em;
 }
 #content {
-	width:80%;
+	width:90%;
 	margin-left:auto;
 	margin-right:auto;
 }
 
 .content_left {
-	width:33%;
+	width:40%;
 	display:inline;
 }
 
@@ -93,8 +93,8 @@ float:left;
 	text-shadow:0px 1px 0px #2f6627;
 	display:block;
 	margin:1em;
-	width:6em;
-	margin-right:5em;
+	width:65%;
+	margin-right:5%;
 	text-align:center;
 }
 .nav_btn:hover {
@@ -108,4 +108,5 @@ float:left;
 #twitter-widget-0{
 	width : 100% !important;
 	margin-top:2em !important;
+	height:300px !important;
 }
