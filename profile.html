@@ -27,12 +27,12 @@ window.fbAsyncInit = function() {
     // ADD ADDITIONAL FACEBOOK CODE HERE
 			function onLogin(response) {
 		  if (response.status == 'connected') {
-			FB.api('/me?fields=first_name', function(data) {
+			FB.api('/me', function(data) {
 			  var welcomeBlock = document.getElementById('name');
 			  welcomeBlock.innerHTML = 'Hello, ' + data.first_name + '!';
 			  
 			  var welcomeBlock = document.getElementById('name1');
-			  welcomeBlock.innerHTML = 'Hello, ' + data.first_name + '!';
+			  welcomeBlock.innerHTML = data.first_name + ' ' + data.last_name;
 			});
 			FB.api('/me/picture?type=normal', function (response) {
           document.getElementById("profile").setAttribute("src", response.data.url);
@@ -83,12 +83,12 @@ window.fbAsyncInit = function() {
 <div id="content">
 	<div style="width:60%; margin-left:2em; margin-top:4em;">
 	<div style="width:25%; float:left;">
-	<img style="width:100px; height:auto;" src="img/logo.png" id="profile"></img>
+	<img style="width:100px; height:auto;" src="" id="profile"></img>
 	</div>
 	<div style="width:45%; float:left;">
-	<h1 style="margin:0;" id="name1">Jason Grant</h1>
+	<h1 style="margin:0; font-family: 'PT Sans', sans-serif;" id="name1"></h1>
 	<h2>Location: Belfast</h2>
-	<p>Total Raised: £x.xx</p>
+	<p>Total Raised: £100,000.00</p>
 	</div>
 	</div>
 </div>
