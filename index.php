@@ -118,7 +118,7 @@ window.twttr = (function(d, s, id) {
 </div>
 </div>
 
-<div style="float:left">
+<div style="float:left; margin-left:4em; margin-top:-1em;">
 	<div class="column-left">
 		<div class="fb-share-button" data-href="https://apps.facebook.com/macmillancompanion" data-layout="button"></div>
 	</div>
