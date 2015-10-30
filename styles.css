@@ -2,7 +2,6 @@ body {
 	background-color: #fafafa;
 	margin:0;
 	padding:0;
-	width:100%;
 }
 
 h2{
@@ -26,14 +25,13 @@ ul {
 	height: 9em;
 	background-color: #00ad4d;
 	padding:1em;
-	width:100%;
+	
 }
 
 #toolbar {
 	background-color:#e6e6e6;
 	height:1.7em;
 	padding:1em;
-	width:100%;
 }
 
 #logo {
