@@ -27,12 +27,12 @@ window.fbAsyncInit = function() {
     // ADD ADDITIONAL FACEBOOK CODE HERE
 			function onLogin(response) {
 		  if (response.status == 'connected') {
-			FB.api('/me', function(data) {
+			FB.api('/me?fields=first_name', function(data) {
 			  var welcomeBlock = document.getElementById('name');
 			  welcomeBlock.innerHTML = 'Hello, ' + data.first_name + '!';
 			  
 			  var welcomeBlock = document.getElementById('name1');
-			  welcomeBlock.innerHTML = data.first_name + ' ' + data.last_name;
+			  welcomeBlock.innerHTML = 'Hello, ' + data.first_name + '!';
 			});
 			FB.api('/me/picture?type=normal', function (response) {
           document.getElementById("profile").setAttribute("src", response.data.url);
