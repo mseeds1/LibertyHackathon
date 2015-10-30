@@ -101,7 +101,7 @@ window.twttr = (function(d, s, id) {
 		<li><a href="updates.html" class="nav_btn">Updates</a></li>
 		<li><a href="profile.html"  class="nav_btn">Profile</a></li>
 		<li><a href="support.html"  class="nav_btn">Support</a></li>
-		<div class="fb-share-button" data-href="https://app.facebook.com/macmillancompanion" data-layout="button"></div>
+		<div class="fb-share-button" data-href="https://apps.facebook.com/macmillancompanion" data-layout="button"></div>
 	</ul>
 	<div class="btn_list">
 	<ul style="width:100%;">
