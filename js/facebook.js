@@ -15,6 +15,7 @@ window.fbAsyncInit = function() {
 			  welcomeBlock.innerHTML = 'Hello, ' + data.first_name + '!';
 			  
 			  console.log(data.user-id + " = user ID");
+			  console.log("hello");
 			});
 		  }
 		}
