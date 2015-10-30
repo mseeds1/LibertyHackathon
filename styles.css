@@ -109,6 +109,9 @@ float:left;
 	position:relative;
 	top:1px;
 }
+#profile {
+	height:2em;
+}
 
 #twitter-widget-0{
 	width : 100% !important;
