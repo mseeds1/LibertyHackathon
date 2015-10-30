@@ -101,15 +101,15 @@ window.twttr = (function(d, s, id) {
 <div id="content">
 <div class="content_left">
 	<ul class="btn_list">
-		<li><button href="updates.html" class="nav_btn">Updates</button></li>
-		<li><button href="profile.html"  class="nav_btn">Profile</button></li>
-		<li><button href="support.html"  class="nav_btn">Support</button></li>
+		<li><a href="updates.html" class="nav_btn">Updates</a></li>
+		<li><a href="profile.html"  class="nav_btn">Profile</a></li>
+		<li><a href="support.html"  class="nav_btn">Support</a></li>
 	</ul>
 	<div class="btn_list">
 	<ul>
-	<li><button href="events.html"  class="nav_btn">Events</button></li>
-	<li><button href="contact.html"  class="nav_btn">Contact</button></li>
-	<li><button href="donate.html"  class="nav_btn">Donate</button></li>
+	<li><a href="events.html"  class="nav_btn">Events</a></li>
+	<li><a href="contact.html"  class="nav_btn">Contact</a></li>
+	<li><a href="donate.html"  class="nav_btn">Donate</a></li>
 	</ul>
 	</div>
 </div>
