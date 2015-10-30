@@ -52,17 +52,6 @@ window.twttr = (function(d, s, id) {
 			});
 		  }
 		}
-		
-			function getFBData () {
-			FB.api('/me', function(response) {
-			  fbinfo = new Array();
-			  fbinfo[0] = response.id;
-			  fbinfo[1] = response.first_name;
-			  fbinfo[2] = response.last_name;
-			  fbinfo[3] = response.email;
-
-				 var im = document.getElementById("profile").setAttribute("src", "http://graph.facebook.com/" + id + "/pciture?type=normal");
-			});
 
 		FB.getLoginStatus(function(response) {
 		  // Check login status on load, and if the user is
