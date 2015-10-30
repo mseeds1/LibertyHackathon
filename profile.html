@@ -16,7 +16,52 @@
 
 <body>
 
-<script src="js/facebook.js"></script>
+<script >
+window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '520486288114362',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+
+    // ADD ADDITIONAL FACEBOOK CODE HERE
+			function onLogin(response) {
+		  if (response.status == 'connected') {
+			FB.api('/me?fields=first_name', function(data) {
+			  var welcomeBlock = document.getElementById('name');
+			  welcomeBlock.innerHTML = 'Hello, ' + data.first_name + '!';
+			  
+			  var welcomeBlock = document.getElementById('name1');
+			  welcomeBlock.innerHTML = 'Hello, ' + data.first_name + '!';
+			});
+			FB.api('/me/picture?type=normal', function (response) {
+          document.getElementById("profile").setAttribute("src", response.data.url);
+        });
+		  }
+		}
+
+		FB.getLoginStatus(function(response) {
+		  // Check login status on load, and if the user is
+		  // already logged in, go directly to the welcome message.
+		  if (response.status == 'connected') {
+			onLogin(response);
+		  } else {
+			// Otherwise, show Login dialog first.
+			FB.login(function(response) {
+			  onLogin(response);
+			}, {scope: 'user_friends, email'});
+		  }
+		});
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 
 <div id="navbar">
 	<div id="navcontainer">
@@ -36,12 +81,12 @@
 </div>
 
 <div id="content">
-	<div style="width:60%;">
+	<div style="width:60%; margin-left:2em; margin-top:4em;">
 	<div style="width:25%; float:left;">
 	<img style="width:100px; height:auto;" src="img/logo.png" id="profile"></img>
 	</div>
 	<div style="width:45%; float:left;">
-	<h1 style="margin:0;" id="name">Jason Grant</h1>
+	<h1 style="margin:0;" id="name1">Jason Grant</h1>
 	<h2>Location: Belfast</h2>
 	<p>Total Raised: £x.xx</p>
 	</div>
