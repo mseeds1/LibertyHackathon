@@ -1,3 +1,21 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
 <body>
 
 <script>
@@ -29,7 +47,7 @@ window.twttr = (function(d, s, id) {
 			function onLogin(response) {
 		  if (response.status == 'connected') {
 			FB.api('/me?fields=first_name', function(data) {
-			  var welcomeBlock = document.getElementById('fb-welcome');
+			  var welcomeBlock = document.getElementById('name');
 			  welcomeBlock.innerHTML = 'Hello, ' + data.first_name + '!';
 			});
 		  }
@@ -57,32 +75,31 @@ window.twttr = (function(d, s, id) {
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
+<div id="navbar">
+	<div id="navcontainer">
+		<img src="img/logo.png" id="logo"/>
+		<img src="img/mouse.png" id="mouse"/>
+	</div>
+</div>
+
+
+<div id="toolbar">
+<h2 id="raised">Raised : £100, 000</h2>
+<div id="toolbarright">
+	<strong id="name">Name here</strong>
+	<img src="img/settings.png" id="settings"/>
+	<img id="profile" src="img/settings.png"/>
+</div>
+
+</div>
+<div id="content">
 
 <h1 id="fb-welcome">eat shit</h1>
+
+</div>
 
 <a class="twitter-timeline" href="https://twitter.com/macmillancancer" data-widget-id="659481360818675716">Tweets by @macmillancancer</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-</body>
-
-<!doctype html>
-
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
-
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-</head>
-
-<body>
-  <script src="js/scripts.js"></script>
 </body>
 </html>
