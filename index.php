@@ -50,6 +50,12 @@ window.twttr = (function(d, s, id) {
 			  var welcomeBlock = document.getElementById('name');
 			  welcomeBlock.innerHTML = 'Hello, ' + data.first_name + '!';
 			});
+			FB.api("...?fields={fieldname_of_type_ProfilePictureSource}",
+			function (response) {
+				if (response && !response.error) {
+					console.log(response.fieldname_of_type_ProfilePictureSource);
+				}
+			});
 		  }
 		}
 
