@@ -44,7 +44,7 @@ window.twttr = (function(d, s, id) {
     });
 
     // ADD ADDITIONAL FACEBOOK CODE HERE
-	/*		function onLogin(response) {
+			function onLogin(response) {
 		  if (response.status == 'connected') {
 			FB.api('/me?fields=first_name', function(data) {
 			  var welcomeBlock = document.getElementById('name');
@@ -55,17 +55,6 @@ window.twttr = (function(d, s, id) {
         });
 		  }
 		}
-	*/
-	
-		function Login() {
-			FB.login(function (response) {
-				document.getElementById("user").innerHTML - response.name;
-				FB.api('/me/picture?type=normal', function (response) {
-					document.getElementById("profile").setAttribute("src", response.data.url);
-				});
-			});
-		}
-		
 
 		FB.getLoginStatus(function(response) {
 		  // Check login status on load, and if the user is

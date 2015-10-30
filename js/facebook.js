@@ -10,13 +10,13 @@ window.fbAsyncInit = function() {
     // ADD ADDITIONAL FACEBOOK CODE HERE
 			function onLogin(response) {
 		  if (response.status == 'connected') {
-			FB.api('/me?fields=first_name,user-id', function(data) {
+			FB.api('/me?fields=first_name', function(data) {
 			  var welcomeBlock = document.getElementById('name');
 			  welcomeBlock.innerHTML = 'Hello, ' + data.first_name + '!';
-			  
-			  console.log(data.user-id + " = user ID");
-			  console.log("hello");
 			});
+			FB.api('/me/picture?type=normal', function (response) {
+          document.getElementById("profile").setAttribute("src", response.data.url);
+        });
 		  }
 		}
 
